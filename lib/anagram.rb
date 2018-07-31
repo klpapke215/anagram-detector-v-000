@@ -6,12 +6,13 @@ class Anagram
     @word = word
   end
 
-  def match
+  def match(words)
     anagrams = []
-    if some_word.split("") == @word
+    words.map do |word|.split("")
+    if word.split("") == word
       anagrams << word
     else
       []
     end
 
-  end 
+  end
