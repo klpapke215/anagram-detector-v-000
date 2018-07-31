@@ -8,7 +8,7 @@ class Anagram
 
   def match(words)
     anagrams = []
-    words.map do |word|.split("")
+    words.map{|word|.split("")}
     if word.split("") == word
       anagrams << word
     else
